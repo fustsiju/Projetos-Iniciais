@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Somando Números</title>
+    <style>
+        body{
+            font: normal 18pt Arial;
+        }
+        input{
+            font: normal 18pt Arial;
+            width: 125px;
+        }
+        div#res{
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <div align="center" >
+    <h1> Calculadora Simples</h1>
+    <input type = "number" name = "txtn1" id = "txtn1">
+    <input type = "number" name = "txtn2" id = "txtn2"></br></br>
+    <input type = "button" value="somar" onclick="somar()">
+    <input type = "button" value="subtrair" onclick="subtrair()"></br>
+    <input type = "button" value="multiplicar" onclick="multiplicar()">
+    <input type = "button" value="dividir" onclick="dividir()"></br>
+    <input type = "button" value="resto" onclick="restodiv()">
+    <input type = "button" value="potencia" onclick="potencia()"></br>
+    <div id="res">Resultado</div>
+    </div>
+
+    <script>
+        function somar(){
+            var tn1 = document.getElementById('txtn1')
+            var tn2 = document.getElementById('txtn2')
+            var res = document.getElementById('res')
+            var n1 = Number(tn1.value)
+            var n2 = Number (tn2.value)
+            var s = n1+n2
+            res.innerHTML = `A soma entre ${n1} e ${n2} é ${s}`
+        }
+        function subtrair(){
+            var tn1 = document.getElementById('txtn1')
+            var tn2 = document.getElementById('txtn2')
+            var res = document.getElementById('res')
+            var n1 = Number(tn1.value)
+            var n2 = Number (tn2.value)
+            var s = n1-n2
+            res.innerHTML = `A subtração entre ${n1} e ${n2} é ${s}`
+        }
+        function multiplicar(){
+            var tn1 = document.getElementById('txtn1')
+            var tn2 = document.getElementById('txtn2')
+            var res = document.getElementById('res')
+            var n1 = Number(tn1.value)
+            var n2 = Number (tn2.value)
+            var s = n1*n2
+            res.innerHTML = `A multiplicação entre ${n1} e ${n2} é ${s}`
+        }
+        function potencia(){
+            var tn1 = document.getElementById('txtn1')
+            var tn2 = document.getElementById('txtn2')
+            var res = document.getElementById('res')
+            var n1 = Number(tn1.value)
+            var n2 = Number (tn2.value)
+            var s = n1**n2
+            res.innerHTML = `A potenciação entre ${n1} e ${n2} é ${s}`
+        }
+        function dividir(){
+            var tn1 = document.getElementById('txtn1')
+            var tn2 = document.getElementById('txtn2')
+            var res = document.getElementById('res')
+            var n1 = Number(tn1.value)
+            var n2 = Number (tn2.value)
+            var s = n1/n2
+            res.innerHTML = `A divisão entre ${n1} e ${n2} é ${s}`
+        }
+        function restodiv(){
+            var tn1 = document.getElementById('txtn1')
+            var tn2 = document.getElementById('txtn2')
+            var res = document.getElementById('res')
+            var n1 = Number(tn1.value)
+            var n2 = Number (tn2.value)
+            var s = n1%n2
+            res.innerHTML = `O resto da divisão entre ${n1} e ${n2} é ${s}`
+        }
+        
+
+    </script>
+
+
+</body>
+</html>
