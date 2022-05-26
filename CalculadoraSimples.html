@@ -16,10 +16,20 @@
         div#res{
             margin-top: 20px;
         }
+        #div1{
+        width:500px;
+        height:500px;
+        border:solid 1px;
+        border-radius:20px;
+        box-shadow: 10px 10px 10px 5px black;
+        margin:auto;
+    }
     </style>
 </head>
 <body>
 
+    
+    <div id="div1"/>
     <div align="center" >
     <h1> Calculadora Simples</h1>
     <input type = "number" name = "txtn1" id = "txtn1">
@@ -29,9 +39,10 @@
     <input type = "button" value="multiplicar" onclick="multiplicar()">
     <input type = "button" value="dividir" onclick="dividir()"></br>
     <input type = "button" value="resto" onclick="restodiv()">
-    <input type = "button" value="potencia" onclick="potencia()"></br>
+    <input type = "button" value="potencia" onclick="potencia()"></br></br></br>
     <div id="res">Resultado</div>
     </div>
+</div>
 
     <script>
         function somar(){
