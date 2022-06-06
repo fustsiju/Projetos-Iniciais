@@ -1,0 +1,95 @@
+body{
+    background-color: rgb(36, 36, 36);
+}
+h1 {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white;
+    text-align: right;
+    font-size: 80px;
+}
+label{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+content{
+    height: 10em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.fundo{
+    position: fixed;
+    top: 100px;
+    left: 400px;
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    background-color: red;
+
+}
+.quadb{
+    position: fixed;
+    top:150px;
+    left:150px;
+    width: 500px;
+    height: 400px;
+    background-color: white;
+}
+.quadp{
+    position: fixed;
+    top:150px;
+    left:650px;
+    width: 500px;
+    height: 400px;
+    background-color: rgb(36, 36, 36);
+    box-shadow: 10px 5px 5px black;
+}
+.linha{
+    position: fixed;
+    top: 500px;
+    left: 675px;
+    width: 150px;
+    height: 10px;
+    background-color: white;
+}
+
+.contato{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width:100%;
+    margin:auto;
+    overflow:hidden;
+    background-color: #0a0a0c;
+  }
+  .formulario{
+    border-radius: 5px;
+    background-color: white;
+    padding: 30px;
+  
+  }
+  input[type=text], select, textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  
+  input[type=submit] {
+    background-color: rgba(148, 60, 60, 0.5);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: red;
+  }
+  
+ 
